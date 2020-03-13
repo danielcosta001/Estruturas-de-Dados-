@@ -11,12 +11,14 @@ int main(void)
     Objeto Y;
     Y.chave=10;
     iniciaPilha(&X);
-    //estaCheia(&X);
+    estaCheia(&X);
     empilha(Y,&X);
+    imprimePilha(&X);
     Y.chave=20;
     empilha(Y,&X);
     imprimePilha(&X);
-    topo(&X);
+    desempilha(&Y,&X);
+    imprimePilha(&X);
 
 
     return 0;
