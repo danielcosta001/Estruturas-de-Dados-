@@ -20,6 +20,23 @@ int main(void)
     desempilha(&Y,&X);
     imprimePilha(&X);
 
+    for (int i = 0; i < 100; i++)
+    {
+        Y.chave=i;
+        empilha(Y,&X);
+    }
+    imprimePilha(&X);
+    desempilha(&Y,&X);
+    desempilha(&Y,&X);
+    desempilha(&Y,&X);
+    imprimePilha(&X);
+
+        for (int i = 0; i < 100; i++)
+    {
+        Y.chave=i;
+        desempilha(&Y,&X);
+    }
+    imprimePilha(&X);
 
     return 0;
 }
